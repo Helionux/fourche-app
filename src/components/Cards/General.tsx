@@ -1,3 +1,5 @@
+"use client"
+
 import { ResponsiveBump } from "@nivo/bump";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
 

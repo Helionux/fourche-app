@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+"use client"
+
+import { useState } from 'react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
 import { Button } from './ui/button';
 import { BellIcon } from 'lucide-react';
@@ -24,7 +26,7 @@ const Header = () => {
                 <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                     <Button className="relative" variant="outline" size="icon">
-                        <div className={`{absolute -top-2 -right-1 h-3 w-3 rounded-full my-1 ${Notification.find((x: any) => x.read === true) ? 'bg-green-500' : 'bg-neutral-200'}`}></div>
+                        <div className={`absolute -top-2 -right-1 h-3 w-3 rounded-full my-1 ${notifications.find((x: any) => x.read === true) ? 'bg-green-500' : 'bg-neutral-200'}`}></div>
                         <BellIcon />
                     </Button>
                 </DropdownMenuTrigger>
