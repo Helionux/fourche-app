@@ -1,8 +1,11 @@
-import React from 'react';
+"use client"
+
+import { useState } from 'react';
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList, CommandSeparator, CommandShortcut } from './ui/command';
 import { Calculator, Calendar, CreditCard, Settings, Smile, User } from 'lucide-react';
 
-const CommandDemo= () => {
+const CommandDemo = () => {
+    const [ open, setOpen ] = useState<boolean>(false)
     return (
         <Command className="rounded-lg border">
             <CommandInput className="border-none" placeholder="Type a command or search..." />
