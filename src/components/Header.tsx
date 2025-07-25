@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu';
 import { Button } from './ui/button';
 import { BellIcon } from 'lucide-react';
+import CommandDemo from './Command';
 
 const Header = () => {
     const [notifications, setNotifications] = useState<any>([
